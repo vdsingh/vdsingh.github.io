@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musician Page Title</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="musicianex.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark py-0 fixed-top" id="mainnav">
+        <a class="navbar-brand" href="#"><i class="fas fa-guitar mr-2"></i>VIKRAM SINGH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TICKETS</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    <div class="container-fluid px-0">
+        <div class="row align-items-center mb-5">
+            <div class="d-none d-md-block col-md-6 text-center text-white mt-5" id="mainHead">
+                <h1 class="">VIKRAM SINGH</h1>
+                <h1 class="">VIKRAM SINGH</h1>
+                <h1 class="">VIKRAM SINGH</h1>
+                <h1 class="">VIKRAM SINGH</h1>
+                <h1 class="">VIKRAM SINGH</h1>
+                <h1 class="">VIKRAM SINGH</h1>
+                <h1 class="">VIKRAM SINGH</h1>
+            </div>
+            <div class="col-md-6">
+                <img src="concertpic.jpeg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid px-0">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="concertpic2.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="d-block col-md-6 text-white text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                        <h2 class="mb-0">Lorem ipsum dolor sit.</h2>
+                        <i class="fas fa-microphone display-4 my-3 d-none d-lg-block"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error soluta dolore nostrum quaerat veritatis, tempora distinctio corporis iusto iste culpa vitae aliquid nulla, quos obcaecati tenetur delectus debitis consequuntur, consequatur voluptatem quas eligendi alias. Rerum illo iure sequi distinctio atque.</p>                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="d-block col-md-6 text-white text-center order-1">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                        <h2 class="mb-0">Lorem ipsum dolor sit.</h2>
+                        <i class="fas fa-microphone display-4 my-3 d-none d-lg-block"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error soluta dolore nostrum quaerat veritatis, tempora distinctio corporis iusto iste culpa vitae aliquid nulla, quos obcaecati tenetur delectus debitis consequuntur, consequatur voluptatem quas eligendi alias. Rerum illo iure sequi distinctio atque.</p>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-2">
+                <img src="concertpic3.jpeg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://kit.fontawesome.com/a63eef66d0.js"></script>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(document).scroll(function(){
+                var $nav = $("#mainnav");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            })
+        })
+    </script>
+</body>
+</html>
