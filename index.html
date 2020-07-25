@@ -18,15 +18,17 @@
 </head>
 
 <body>
-	<h3 id="topright" class="cornerpiece"><a href="comingsoon.html">About Me</a></h3>
+	<h3 id="topright" class="cornerpiece pointer" onclick="aboutMeClicked();">About Me</h3>
+
+
 	<h3 id="topleft" class="cornerpiece"><a href="resumepdf.pdf">Resume</a></h3>
 	<h3 id="bottomleft" class="cornerpiece"><a href="projects.html">Projects</a></h3>
 	<h3 id="bottomright" class="cornerpiece"><a href="https://www.github.com/vdsingh">Github</a></h3>
 
 	<h4 id="photocred">Photo By: Dominik Schröder</h4>
 
-	<div id="center-grouping" class="center-screen">
-		<h1 id="mainhead">Vikram Singh<hr></h1>
+	<div id="center-grouping">
+		<h1 id="mainhead" class="ml12">Vikram Singh</h1>
 		<h2 id="subtext">I'm a
 			<span
 				class="txt-rotate"
@@ -34,9 +36,11 @@
 				data-rotate='[ "Student.", "Developer.", "Dreamer." ]'>
 			</span>
 		</h2>
-		<!-- <h2 id="subtext"><span id="student">Student.</span><span id="developer"> Developer.</span><span id="dreamer"> Dreamer.</span></h2> -->
+		
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 	<script src="ronaldo/js/jquery.min.js"></script>
 	<script src="ronaldo/js/jquery-migrate-3.0.1.min.js"></script>
@@ -48,6 +52,24 @@
 	<script src="ronaldo/js/scrollax.min.js"></script>
 	
 	<script src="ronaldo/js/main.js"></script>
+
+	<script type="text/javascript">
+
+			// Wrap every letter in a span
+		var textWrapper = document.querySelector('.ml12');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: 1})
+		.add({
+			targets: '.ml12 .letter',
+			translateX: [40,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 1200,
+			delay: (el, i) => 500 + 30 * i
+		});	
+	</script>
 </body>
 
 </html>

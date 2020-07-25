@@ -17,6 +17,46 @@
 	}
 
   }
+  .ml6 {
+	position: relative;
+	font-weight: 900;
+	font-size: 3.3em;
+  }
+  
+  .ml6 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-right: 0.05em;
+	padding-bottom: 0.1em;
+	overflow: hidden;
+  }
+  
+  .ml6 .letter {
+	display: inline-block;
+	line-height: 1em;
+  }
+/* 
+  @keyframes moving {
+    0%   {left:0px; top:0px;}
+	/* 25%  {left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;} */
+	/* 100% {left:0px; top:300px;} */
+/* } */ 
+
+  
+  .ml12 .letter {
+	display: inline-block;
+	line-height: 1em;
+  }
+
+img{
+	width: 30%;
+}
+.pointer {
+	cursor: pointer;
+}
 
 body{
 	background: url("skybackground.jpeg");
@@ -92,11 +132,11 @@ html{
   }
 
 #mainhead{
-	/* position: absolute; */
-	/* top: 40%; */
-	/* left: 50%; */
-	/* margin-left: -172px; */
-	/* margin-top: -36px; */
+	/* position: absolute;
+	top: 40%;
+	left: 50%; */
+	/* margin-left: -172px;
+	margin-top: -36px; */
 	margin-bottom: 0px;
 	font-family: Roboto;
 	font-size: 3.75em;
@@ -107,13 +147,27 @@ html{
 				0px 8px 13px rgba(0,0,0,0.1),
 				0px 18px 23px rgba(0,0,0,0.1); 
 }
+
+#center-grouping{
+	/* position: absolute;
+	top: 30%;
+	left: 30%; */
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-animation: moving 5s;
+    animation: moving 5s;
+  
+}
+
 #subtext{
 	/* position: absolute;
-	top: 60%;
-	left: 50%;
-	margin-left: -309px;
-	margin-top: -36px; */
-	margin-top: 0px;
+	top: 53%;
+	left: 72%;
+	margin-left: -309px; */
+	/* margin-top: 0px; */
+	text-align: center;
 	font-family: Roboto;
 	/* font-family: Source Code Pro; */
 
