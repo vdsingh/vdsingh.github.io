@@ -8,7 +8,12 @@
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 800px) {
 	body {
-	  font-size: 32px;
+	  font-size: 35px;
+	}
+
+	.cornerpiece{
+		margin-left: 2%;
+		margin-right: 2%;
 	}
   }
 
