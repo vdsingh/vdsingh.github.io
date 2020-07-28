@@ -25,9 +25,10 @@ body{
 
 		background-position: center;
 	  background-size: cover;
+		position: relative;
 	  width: 100%;
 	  height: 100%;
-	  background-image: url("space.jpeg");
+		background: linear-gradient(#a8c0ff, #3f2b96);
 
 		z-index: 0;
 	}
@@ -200,8 +201,8 @@ ul, ol {
 
 
 
-.rounded {
-    border-radius: 1rem!important;
+.rounded,.front,.back{
+    border-radius: 3rem!important;
 }
 
 .title{

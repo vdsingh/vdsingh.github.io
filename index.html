@@ -35,7 +35,24 @@
 </head>
 
 <body id="body">
-	<div id="state1">
+	<div id="state1" class="area">
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+
+		</ul>
 		<div class="container top-container rounded">
 			<div class="row">
 				<div class="col-sm">
@@ -139,12 +156,12 @@
 
 				<!-- <small>Changing the world one project at a time.</small> -->
 				<div class="col-sm-10 col-sm-offset-1 my-cards">
-					<div class="col-md-4 col-sm-6" onmouseover="changeBackgroundColor('#ed712f')">
-						<div class="card-container">
+					<div class="col-md-4 col-sm-6" onmouseover="changeBackgroundColor('red','orange')">
+						<div class="card-container rounded">
 							<div class="card">
 								<div class="front">
 									<div class="cover">
-										<img src="rotating-css-card-master/images/studiumbackground.jpeg"/>
+										<img src="rotating-css-card-master/images/studiumbackground.jpeg" class="rounded"/>
 									</div>
 									<div class="user">
 										<img class="img-circle" src="rotating-css-card-master/images/studiumlogo.png"/>
@@ -184,12 +201,12 @@
 						</div> <!-- end card-container -->
 					</div> <!-- end col sm 3 -->
 					<!--         <div class="col-sm-1"></div> -->
-					<div class="col-md-4 col-sm-6" onmouseover="changeBackgroundColor('#5cb5f2')">
+					<div class="col-md-4 col-sm-6" onmouseover="changeBackgroundColor('#03cc6c', '#35b7f9')">
 						<div class="card-container">
 							<div class="card">
 								<div class="front">
 									<div class="cover">
-										<img src="rotating-css-card-master/images/pocketplanetbackground.jpeg"/>
+										<img src="rotating-css-card-master/images/pocketplanetbackground.jpeg" class="rounded"/>
 									</div>
 									<div class="user">
 										<img class="img-circle" src="pocketplanetlogo.png"/>
@@ -228,12 +245,12 @@
 						</div> <!-- end card-container -->
 					</div> <!-- end col sm 3 -->
 					<!--         <div class="col-sm-1"></div> -->
-					<div class="col-md-4 col-sm-6" onmouseover="changeBackgroundColor('#c867db');">
+					<div class="col-md-4 col-sm-6" onmouseover="changeBackgroundColor('#ff50f8', '#a000ff');">
 						<div class="card-container">
 							<div class="card">
 								<div class="front">
 									<div class="cover">
-										<img src="rotating-css-card-master/images/climabackground.png"/>
+										<img src="rotating-css-card-master/images/climabackground.png" class="rounded"/>
 									</div>
 									<div class="user">
 										<img class="img-circle" src="rotating-css-card-master/images/climalogo.png"/>
@@ -394,8 +411,8 @@
 	};
 
 
-	function changeBackgroundColor(hexcolor){
-		document.getElementById("state3").style.backgroundColor = hexcolor;
+	function changeBackgroundColor(color1, color2){
+		document.getElementById("state3").style.background = "linear-gradient(" + color1 + "," + color2 + ")";
 	}
 	</script>
 
