@@ -18,15 +18,18 @@
 		height: 100px;
 	} */
 
-	.content{
+	.content .main{
 		height: 50px;
 	}
-	.main{
+	/* .main{
 		height: 100%;
-	}
+	} */
 	.card .content .main {
     min-height: 0px;
 }
+	.card .back .content .main {
+    height: 50px;
+	}
 
 }
 
