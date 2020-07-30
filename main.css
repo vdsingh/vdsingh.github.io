@@ -200,7 +200,7 @@ h4, .text-center{
 	padding: 0;
 	background-color: white;
 	font-family: Roboto;
-	height: 80% !important;
+	height: 80%;
 	/* box-shadow: 5px 18px 18px #000000; */
 
 	/* box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 15px green, 0 0 20px green, 0 0 25px green, 0 0 30px green, 0 0 35px green; */
@@ -211,7 +211,7 @@ ul, ol {
 }
 .bottom-container{
 	position: relative;
-	top: 55%;
+	top: 50%;
 	transform: translate(0%, -50%);
 
 }
@@ -267,9 +267,37 @@ font-family: Rowdies;
 
 #topleft{
 	position: absolute;
-	top: 4px;
-	left: 20px;
+	top: 30px;
+	left: 30px;
 }
+.row{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+.card-container{
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+
+}
+.card-column{
+	/* margin: 0px !important;
+	display: inline-block; */
+	/* width: 30%; */
+	/* position: relative;
+	left: 50%;
+	transform: translate(-50%); */
+}
+/* @media screen and (max-width: 600px) {
+          /* width: 100%; */
+
+/* .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 65%;
+} */
+
 
 #space{
 	position: absolute;
@@ -292,32 +320,32 @@ font-family: Rowdies;
 	  100% {left:45%; top:45%;}
 }
 
-.row{
+/* .row{
 	position: absolute;
 		top: 50%;
 		left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%
-}
+} */
 
 #topright{
 	position: absolute;
 	/* width: 15%; */
 
-	top: 4px;
-	right: 4px;
+	top: 30px;
+	right: 30px;
 }
 
 
 #bottomleft{
 	position: absolute;
-	bottom: 4px;
-	left: 20px;
+	bottom: 30px;
+	left: 30px;
 }
 #bottomright{
 	position: absolute;
-	bottom: 4px;
-	right: 4px;
+	bottom: 30px;
+	right: 30px;
 }
 #photocred{
 	font-family: Roboto;
@@ -343,6 +371,7 @@ font-family: Rowdies;
 	text-shadow: 0px 3px 3px rgba(0,0,0,1),
 				0px 5px 13px rgba(0,0,0,.4),
 				0px 12px 23px rgba(0,0,0,.1);
+	margin: 0px;
 
 
 }
@@ -388,9 +417,15 @@ li {
   }
 
 .my-cards{
+	min-height: 20%;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
 	position: relative;
+	float: left;
 	top: 50%;
 	transform: translate(0%, -50%);
+	text-align: center;
 }
 #mainhead{
 	/* margin-bottom: 50px; */
