@@ -173,6 +173,7 @@
 								<div class="content">
 									<div class="main">
 										<h4 class="text-center removeOnMobile">Features</h4>
+										<div class="text-center"><a href="https://github.com/vdsingh/Studium" class="learn-more-mobile removeOnDesktop text-center">Learn More</a></div>
 										<ul class="removeOnMobile">
 											<li>Never miss a lecture or assignment, thanks to Studium's Academic Tracking Tools.</li>
 											<li>Studium will automatically schedule habits around events already on your agenda.</li>
@@ -180,7 +181,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="footer">
+								<div class="footer removeOnMobile">
 									<div class="social-links text-center">
 										<a href="comingsoon.html">Learn More</a>
 									</div>
@@ -218,13 +219,14 @@
 								<div class="content">
 									<div class="main">
 										<h4 class="text-center removeOnMobile">Features</h4>
+										<div class="text-center"><a href="https://github.com/vdsingh/Pocket-Planet" class="learn-more-mobile removeOnDesktop text-center">Learn More</a></div>
 										<ul class="removeOnMobile">
 											<li>Created with beautiful graphics, smooth animation, and efficient code, to deliver a satisfying and entertaining user experience.</li>
 											<li>Pocket Planet puts the fate of the Earth is in the Player's hands. The player can choose how to manage the Earth and experience the effects of short term and long term energy.</li>
 										</ul>
 									</div>
 								</div>
-								<div class="footer">
+								<div class="footer removeOnMobile">
 									<div class="social-links text-center">
 										<a href="comingsoon.html">Learn More</a>
 									</div>
@@ -264,7 +266,9 @@
 								</div>
 								<div class="content">
 									<div class="main">
-										<h4 class="text-center removeOnMobile">Features</h4>
+										<h4 class="removeOnMobile text-center">Features</h4>
+
+										<div class="text-center"><a href="https://github.com/vdsingh/Clima" class="learn-more-mobile removeOnDesktop text-center">Learn More</a></div>
 										<ul class="removeOnMobile">
 											<li>Utilizes data from the OpenWeatherMap API to show the forecast for any area in real time.</li>
 											<li>Built with a sleek, minimalistic UI to avoid overcrowding and to deliver information with a clean feel.</li>
@@ -272,7 +276,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="footer">
+								<div class="footer removeOnMobile">
 									<div class="social-links text-center">
 										<a href="comingsoon.html">Learn More</a>
 									</div>
@@ -449,7 +453,13 @@ window.mobileCheck = function() {
 };
 if(window.mobileCheck()){
 	$('.removeOnMobile').remove();
+
+}else{
+	$('.removeOnDesktop').remove()
 }
+// }else{
+// 	$('.removeOnDesktop').remove();
+// }
 </script>
 </body>
 

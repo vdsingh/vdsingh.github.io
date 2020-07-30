@@ -94,6 +94,10 @@
 	}
 }
 
+.learn-more-mobile{
+	color: black !important;
+}
+
 .row{
 	position: relative;
 	top: 50%;
