@@ -480,9 +480,9 @@ li {
 hr{
 	position: absolute;
 	top: 50%;
-	width: 125%;
+	width: 100%;
 	border: 0;
-	margin-left: -44.5px;
+	/* margin-left: -44.5px; */
 	height: 1px;
 	background: #333;
 	background-image: linear-gradient(to right, #ccc, #333, #ccc);
