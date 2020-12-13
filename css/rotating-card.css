@@ -1,9 +1,9 @@
-body {
+/* body {
 	margin-top: 60px;
 	font-size: 14px;
 	font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
 	background-color: #E5E9ED;
-}
+} */
 .btn:hover,
 .btn:focus,
 .btn:active{
@@ -197,7 +197,7 @@ body {
 }
 /*      Just for presentation        */
 
-.title{
+/* .title{
     color: #506A85;
     text-align: center;
     font-weight: 300;
@@ -210,7 +210,7 @@ body {
     color: #999;
     text-transform: uppercase;
     margin: 0;
-}
+} */
 .space-30{
 	height: 30px;
 	display: block;
